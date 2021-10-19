@@ -1,11 +1,11 @@
-const lang = 'en' || navigator.language || navigator.userLanguage;
+const lang = navigator.language || navigator.userLanguage;
 let urlJson;
 const main = document.getElementById('main');
 let dataText = {};
 let fontSizeRu = `line-height: 42px; font-size: 36px;`;
 let fontSizeRu2 = ` font-size: 15.4px;`;
-
-
+// let hrefT = window.location.href
+// console.log(hrefT)
 if (lang.includes('ru')) {
     urlJson = '../Localizations/ru.json';
     fontSizeRu = `line-height: 36px; font-size: 28px;`;
